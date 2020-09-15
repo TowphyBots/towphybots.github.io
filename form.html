@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><center>
+    <meta charset="UTF-8">
+    <title>Towphy.Bots.Submit</title>
+    <link rel = "icon" href =  "https://cdn.discordapp.com/attachments/754619738096795668/755227301888786522/9367f0ee-4bbb-4b68-9698-c1ffc9c53ccf_1.png" 
+        type = "image/x-icon">     
+    <meta name="viewport" content="width=device-width">
+    <style>
+        *,
+        *::after,
+        *:before{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font:normal 20px/1.5 sans-serif;
+        }
+        h1{
+            margin: 1rem 2rem;
+        }
+        form{
+            margin: 2rem;
+            width: 800px;
+        }
+        .form-box{
+            padding: 1rem;
+            clear: both;
+            width: 100%;
+            position: relative;
+        }
+        .form-box label{
+            font-size: 1rem;
+            float: left;
+            width: 100px;
+            margin-right: 20px;
+        }
+        .form-box input{
+            font-size: 1rem;
+            width: 300px;
+            padding: 0.25rem 1rem;
+        }
+        .form-box select{
+            font-size: 1rem;
+            width: 300px;
+            padding: 0.25rem 1rem;
+        }
+        .form-box option{
+            font-size: 1rem;
+            width: 300px;
+            padding: 0.25rem 1rem;
+        }
+        .form-box input[type="checkbox"]{
+            font-size: 1rem;
+        }
+        .form-box button{
+            font-size: 1rem;
+            border: none;
+            padding: 0.25rem 2rem;
+            margin-right: 1rem;
+            color: white;
+            background-color: cornflowerblue;
+            cursor: pointer;
+        }
+        
+        .error::after{
+            background-color: hsl(10, 60%, 50%);
+            color: papayawhip;
+            font-size: 1rem;
+            line-height: 1.8;
+            width: 350px;
+            padding-left: 1rem;
+            position:absolute;
+            right: 0;
+            content: attr(data-errormsg);
+        }
+    </style>
+</head>
+    <body><center>
+        <h1>Towphys.Bots.Submit</h1> 
+    
+        <form id="form-user" action="#" method="post">
+            <div class="form-box error" data-errormsg="">
+                <label for="input-first">Bot name</label>
+                <input type="text" id="input-name" autofocus placeholder="Name" tabindex="1"/>
+            </div>
+            <div class="form-box" data-errormsg="">
+                <label for="input-password">Bot Client ID</label>
+                <input type="text" id="input-id" required placeholder="ID" tabindex="2" />
+            </div>
+            <div class="form-box" data-errormsg="">
+                <label for="input-email">Bot Invite</label>
+                <input type="text" id="input-invite" required placeholder="Invite" tabindex="3" />
+            </div>
+            <div class="form-box" data-errormsg="">
+                <label for="input-email">Support Server</label>
+                <input type="text" id="input-invite" required placeholder="Server" tabindex="3" />
+            </div>
+            <div class="form-box" data-errormsg="">
+                <label for="input-email">Bot Prefix</label>
+                <input type="text" id="input-invite" required placeholder="Prefix" tabindex="3" />
+            </div>
+            <div class="form-box" data-errormsg="">
+                <label for="input-email">Small Description</label>
+                <input type="text" id="input-invite" required placeholder="Text" tabindex="3" />
+            </div>
+            <div class="form-box" data-errormsg="">
+                <label for="input-age">Bot Library</label>
+                <select id="input-age" tabindex="22">
+                    <option value="0">Other</option>
+                    <option value="1">discordcr</option>
+                    <option value="2">Discord.Net</option>
+                    <option value="3">DScharpPlus</option>
+                    <option value="4">Nostrum</option>
+                    <option value="5">DiscordGo</option>
+                    <option value="6">Discord4J</option>
+                    <option value="7">Javacord</option>
+                    <option value="8">JDA</option>
+                    <option value="9">discord.io</option>
+                    <option value="10">discord.js</option>
+                    <option value="11">discorsie</option>
+                    <option value="12">Eris</option>
+                    <option value="13">Discordai</option>
+                    <option value="14">RestCord</option>
+                    <option value="15">Yasmin</option>
+                    <option value="16">disco</option>
+                    <option value="17">discord.py</option>
+                    <option value="18">discordrb</option>
+                    <option value="19">discord-rs</option>
+                    <option value="20">serenity</option>
+                    <option value="21">SwiftDiscord</option>
+                    <option value="22">Sword</option>
+                </select>
+            </div>
+            <div class="form-box" data-errormsg="">
+                <label for="input-alive">Is The Bot On Hosting?</label>
+                <input type="checkbox" id="input-alive" value="yes" tabindex="5" checked />
+            </div>
+            <div class="form-box">
+                <button id="button-cancel">Cancel</button>
+                <button id="button-send">Send</button>
+            </div>
+        </form>
+    
+        <script src="./forms.js"></script>
+    </center>
+    <form action = "index.html">
+        <input type="image" src="home.png" width ="50" height ="50" style="position:fixed; right:10px; bottom:0px; width:50px; height:50px; border:none;"/>
+      </form>
+      <form action = "form.html">
+        <input type="image" src="submit.png" width ="50" height ="50">
+      </form>
+      <form action = "discord.html">
+        <input type="image" src="support.png" width ="50" height ="50">
+      </form>
+      <form action = "profile.html">
+        <input type="image" src="profile.png" width ="50" height ="50">
+      </form>
+    </body>
+
+</html>
